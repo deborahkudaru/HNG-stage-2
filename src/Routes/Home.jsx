@@ -19,7 +19,7 @@ const Home = () => {
         className="py-1.5 px-3.5 w-96 h-11 border rounded-2xl relative left-56 top-10 border-borderColor bg-generalColor"
       />
       <Category />
-      <div className="ml-72 relative bottom-52">
+      <div className="ml-72 relative bottom-10">
         <div className="flex gap-5 mb-7">
           <Items
             itemImage={itemData[0].itemImage}
@@ -103,7 +103,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="flex gap-9 buttons">
+      <div className="flex gap-9 buttons pb-7">
         <button className="bg-imageColor w-11 h-11 relative bottom-3">
           {" "}
           <GrPrevious className="relative left-3" />
@@ -189,7 +189,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex gap-9 buttons-two">
+      <div className="flex gap-9 buttons-two pb-5">
         <button className="bg-imageColor w-11 h-11 relative bottom-3">
           {" "}
           <GrPrevious className="relative left-3" />
