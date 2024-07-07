@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div>
       <Navbar />
       <input
         type="text"

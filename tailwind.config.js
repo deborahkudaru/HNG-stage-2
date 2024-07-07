@@ -14,6 +14,8 @@ module.exports = {
         catWidth: "143px",
         catItemsWidth: "112px",
         arrivalWidth: "1440px",
+        imageW: "83px",
+        calcW:"1020px"
       },
       height: {
         navHeight: "80px",
@@ -22,6 +24,8 @@ module.exports = {
         catItemsHeight: "275px",
         arrivalHeight: "112px",
         footerHeight: "215px",
+        imageH: "83px",
+        calcH: "120px"
       },
       fontFamily: {
         popins: ["Poppins", "sans-serif"],
@@ -34,7 +38,10 @@ module.exports = {
       colors: {
         borderColor: "#ababab",
         star: "#FF9A3F",
+        customOrange: "#ff7f3e",
+        customBlack: "#1e1e1e"
       },
+      
     },
   },
   plugins: [],
