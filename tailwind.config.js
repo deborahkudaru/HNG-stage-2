@@ -15,7 +15,10 @@ module.exports = {
         catItemsWidth: "112px",
         arrivalWidth: "1440px",
         imageW: "83px",
-        calcW:"1020px"
+        calcW:"1020px",
+        input: "375px",
+        input2: "165px",
+        search: "396px"
       },
       height: {
         navHeight: "80px",

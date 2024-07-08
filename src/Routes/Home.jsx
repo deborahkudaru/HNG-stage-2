@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import Category from "../components/Category";
 import Items from "../components/Items";
 import itemData from "../itemData";
@@ -12,13 +11,12 @@ import Footer from "../components/Footer";
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <input
         type="text"
         placeholder="Search..."
-        className="py-1.5 px-3.5 w-96 h-11 border rounded-2xl relative left-56 top-10 border-borderColor bg-generalColor"
+        className="md:py-1.5 md:px-3.5 py-1 px-2 w-search relative left-10 top-4 rounded-md md:w-96 md:h-11 h-7 border md:rounded-2xl md:relative md:left-56 md:top-10 border-borderColor bg-generalColor"
       />
-      <Category />
+      <Category/>
       <div className="ml-72 relative bottom-10">
         <div className="flex gap-5 mb-7">
           <Items
@@ -116,8 +114,8 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="w-arrivalWidth h-arrivalHeight bg-customOrange mb-10">
-        <h2 className="relative top-9 left-12 font-popins text-arrival text-white">
+      <div className="h-arrivalHeight bg-customOrange mb-10">
+        <h2 className="relative top-7 left-12 font-popins text-arrival text-white">
           New Arrival
         </h2>
       </div>

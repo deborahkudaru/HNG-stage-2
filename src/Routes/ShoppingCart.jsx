@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import Calc from "../components/Calc";
 import cart from "../Cart";
 import { Link } from "react-router-dom";
@@ -9,7 +8,6 @@ import { GoArrowRight } from "react-icons/go";
 const ShoppingCart = () => {
   return (
     <div>
-      <Navbar />
       <div className="pl-14 pt-8">
         <div className=" font-popins pb-7">
           <h2 className="text-arrival">Shopping Cart</h2>
