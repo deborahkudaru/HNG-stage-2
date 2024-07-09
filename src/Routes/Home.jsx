@@ -1,11 +1,11 @@
 import React from "react";
 import Category from "../components/Category";
 import Items from "../components/Items";
-import itemData from "../itemData";
+import itemData from "../data/itemData";
 import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
 import Arrival from "../components/Arrival";
-import newArrival from "../newArrival";
+import newArrival from "../data/newArrival";
 import Ads from "../components/Ads";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
@@ -22,13 +22,13 @@ const Home = () => {
       <Ads />
       <Category />
       <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 lg:pb-24 lg:hidden md:hidden flex  justify-between relative top-20">
-        <h2 className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white">
+        <h2 className="relative lg:top-10 left-6 font-bold top-3 font-popins lg:text-arrival text-md text-white">
           All Category
         </h2>
-        <div className="flex"><Link to="/no-page" className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white mr-20">View All</Link><GoArrowRight className="text-white text-xl relative top-4 right-6" /></div>
+        <div className="flex"><Link to="/no-page" className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-md text-white mr-20">View All</Link><GoArrowRight className="text-white text-xl relative top-4 right-6" /></div>
         
       </div>
-      <div className="md:ml-72 px-3 relative bottom-10 lg:bottom-32">
+      <div className="md:ml-72 px-3 relative bottom-10 lg:bottom-72">
         <div className="grid md:gap-10  lg:grid-cols-4 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-5 px-5 mt-40">
           <Items
             itemImage={itemData[0].itemImage}
@@ -155,7 +155,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="lg:flex lg:gap-9 lg:buttons lg:pb-7 hidden w-60 m-auto">
+      <div className="lg:flex lg:gap-9 lg:buttons lg:pb-7 hidden w-60 m-auto relative bottom-52">
         <button className="bg-imageColor w-11 h-11 relative bottom-3 pr-6">
           {" "}
           <GrPrevious className="relative left-3" />
@@ -168,15 +168,15 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 lg:pb-24 flex justify-between">
-        <h2 className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white">
+      <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 lg:pb-24 flex justify-between relative lg:bottom-32">
+        <h2 className="relative lg:top-10 left-6 font-bold top-3 font-popins lg:text-arrival text-md text-white">
           New Arrival
         </h2>
-        <div className="flex lg:hidden md:hidden" ><Link to="/no-page" className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white mr-20 ">View All</Link><GoArrowRight className="text-white text-xl relative top-4 right-6" /></div>
+        <div className="flex lg:hidden md:hidden" ><Link to="/no-page" className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-md text-white mr-20 ">View All</Link><GoArrowRight className="text-white text-xl relative top-4 right-6" /></div>
       
       </div>
-      <div className=" px-5 lg:px-5">
-        <div className="grid xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-5">
+      <div className=" px-5 lg:px-5 ">
+        <div className="grid xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-5 relative lg:bottom-20">
           <Arrival
             itemImage={newArrival[0].itemImage}
             itemName={newArrival[0].itemName}

@@ -23,3 +23,7 @@ body{
 input[type="checkbox"]:checked::before {
   background-color: #ebebeb; 
 }
+
+hr{
+  background-size: 1px, 3px;
+}

@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { RiMenu3Fill } from "react-icons/ri";
-// import { X } from "lucide-react";
+import { IoIosMenu } from "react-icons/io";
 import { FaTimes } from "react-icons/fa";
 
 const Navlink = () => {
   return (
     <div>
-      <ul className="lg:flex justify-between w-navItemWidth  m-auto text-xl relative bottom-2 text-white font-popins flex-wrap hidden">
+      <ul className="flex justify-between w-navItemWidth lg:ml-96 md:ml-52 text-xl relative bottom-2 text-white font-popins flex-wrap">
         <li>
           <Link className="hover:text-orange-200" to="/">
             Home
@@ -47,12 +46,12 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="w-full justify-between hidden  md:flex lg:flex">
+        <div className="justify-between hidden  lg:flex">
           <Navlink />
         </div>
         <div className="md:hidden text-white">
-          <button onClick={toggleNavbar} className="object-right">
-            {isOpen ? <FaTimes classname="text-2xl"/> : <RiMenu3Fill className="text-2xl" />}
+          <button onClick={toggleNavbar} className="object-right relative top-3">
+            {isOpen ? <FaTimes classname="text-2xl"/> : <IoIosMenu className="text-2xl" />}
           </button>
         </div>
       </nav>

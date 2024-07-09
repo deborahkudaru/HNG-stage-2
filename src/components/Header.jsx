@@ -7,8 +7,9 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <div>
-      <nav className="bg-customOrange h-navHeight">
+      <nav className="bg-customOrange">
         <Logo />
+       
         <Navbar />
         <Icons />
       </nav>

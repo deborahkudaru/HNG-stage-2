@@ -1,7 +1,7 @@
-import sippy from "./images/sippyCup.png";
-import bucket from "./images/bucket-hat.png";
-import scrunchie from "./images/scrunchie.png";
-import metal from "./images/metal.png";
+import sippy from "../images/sippyCup.png";
+import bucket from "../images/bucket-hat.png";
+import scrunchie from "../images/scrunchie.png";
+import metal from "../images/metal.png";
 
 const check = [
   {

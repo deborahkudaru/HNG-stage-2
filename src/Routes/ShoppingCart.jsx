@@ -1,12 +1,12 @@
 import React from "react";
 import Calc from "../components/Calc";
-import cart from "../Cart";
+import cart from "../data/Cart";
 import { Link } from "react-router-dom";
 import { GoArrowLeft } from "react-icons/go";
 import { GoArrowRight } from "react-icons/go";
 import Footer from "../components/Footer";
 import Like from "../components/Like";
-import like from "../like";
+import like from "../data/like";
 import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
 
@@ -82,9 +82,9 @@ const ShoppingCart = () => {
             </div>
           </div>
           <div>
-            <table className="">
+            <table className="mt-10">
               <tr>
-                <td className="font-popins mt-5 lg:text-xl text-lg">
+                <td className="font-popins mt-5 lg:text-xl text-lg pr-5">
                   Sub-Total <span className="text-borderColor">(Tax incl)</span>
                 </td>
                 <td className="font-popins mt-5 lg:text-xl text-lg">N33,000</td>
@@ -95,7 +95,7 @@ const ShoppingCart = () => {
                 </td>
                 <td className="font-popins mt-5 lg:text-xl text-lg">N4,950</td>
               </tr>
-              <hr className="border-t-2 border-dotted border-gray-700 mt-2" />
+              <hr className="border-t-2 border-dotted border-gray-700 mt-2 w-full" />
               <tr>
                 <td className="font-popins mt-5 lg:text-xl text-lg">Total</td>
                 <td className="font-popins mt-5 lg:text-xl text-lg">N28,050</td>
@@ -109,7 +109,7 @@ const ShoppingCart = () => {
         </div>
       </div>
       <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 w-full mt-20 lg:pb-24">
-        <h2 className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white">
+        <h2 className="relative lg:top-10 left-7 top-3 font-popins lg:text-arrival text-xl text-white">
           You may also like
         </h2>
       </div>
@@ -155,6 +155,7 @@ const ShoppingCart = () => {
             rating4={like[3].rating4}
             rating5={like[3].rating5}
           />
+          <div className="hidden lg:flex lg:flex-col">
           <Like
             itemImage={like[4].itemImage}
             itemName={like[4].itemName}
@@ -165,6 +166,8 @@ const ShoppingCart = () => {
             rating4={like[4].rating4}
             rating5={like[4].rating5}
           />
+          </div>
+         
         </div>
       </div>
 

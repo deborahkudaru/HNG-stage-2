@@ -7,7 +7,7 @@ import cloud from "../images/cloud.png";
 
 const Ads = () => {
   return (
-    <div className="flex gap-10 relative top-16">
+    <div className="flex gap-10 relative top-16 ">
       <div className=" font-popins lg:rounded-2xl rounded-lg bg-white relative left-14 border lg:w-adH lg:h-adW h-32 w-72 lg:mb-0 pb-0  border-customOrange">
         <div className="pl-5 lg:pt-10 pt-5">
           <h2 className="lg:text-3xl text-xl lg:mt-3">CLEARANCE SALES!</h2>

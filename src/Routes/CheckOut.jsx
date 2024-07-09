@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { GoArrowLeft } from "react-icons/go";
 import Summary from "../components/Summary";
-import check from "../check";
+import check from "../data/check";
 import Footer from "../components/Footer";
 
 const CheckOut = () => {
@@ -48,7 +48,8 @@ const CheckOut = () => {
           <div className="h-90 border-l-2 border-gray-500 lg:flex hidden"></div>
           <div className="flex flex-col">
             <div className="">
-              <GoArrowLeft className="flex lg:hidden relative top-7 text-2xl" />
+              <Link to="/shopping-cart"><GoArrowLeft className="flex lg:hidden relative top-7 text-2xl" /></Link>
+              
               <h2 className="text-center lg:text-arrival lg:text-start text-2xl mb-5 lg:hidden">
                 Checkout
               </h2>

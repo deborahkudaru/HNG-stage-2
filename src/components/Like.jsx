@@ -8,7 +8,7 @@ const Like = (props) => {
       <div className="bg-imageColor rounded-t-lg">
         <Link
           to="/shopping-cart"
-          className="relative lg:left-52 left-40 text-2xl"
+          className="relative lg:left-52 left-36 text-2xl"
         >
           {" "}
           <IoCartOutline />

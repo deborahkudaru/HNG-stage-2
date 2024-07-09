@@ -1,8 +1,8 @@
-import jean from "./images/jean.png";
-import crop from "./images/crop.png";
-import bag from "./images/bag.png";
-import dress from "./images/dress.png";
-import shelf from "./images/shelf.png";
+import jean from "../images/jean.png";
+import crop from "../images/crop.png";
+import bag from "../images/bag.png";
+import dress from "../images/dress.png";
+import shelf from "../images/shelf.png";
 import { IoIosStar } from "react-icons/io";
 
 const like = [
