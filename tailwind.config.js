@@ -11,6 +11,11 @@ module.exports = {
 
       width:{
         navItemWidth: "551px",
+        adH: "522px",
+        search: "385px",
+      },
+      height:{
+        adW: "241px"
       },
       // width: {
       //   navWidth: "1442px",

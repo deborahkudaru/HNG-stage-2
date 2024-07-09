@@ -8,6 +8,8 @@ import Arrival from "../components/Arrival";
 import newArrival from "../newArrival";
 import Ads from "../components/Ads";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+import { GoArrowRight } from "react-icons/go";
 
 const Home = () => {
   return (
@@ -15,12 +17,19 @@ const Home = () => {
       <input
         type="text"
         placeholder="Search..."
-        className="md:py-1.5 md:px-3.5 py-1 px-2 w-search relative left-3 top-4 rounded-md md:w-96 md:h-11 h-7 border md:rounded-2xl md:relative md:left-56 md:top-10 border-borderColor bg-generalColor"
+        className="md:py-1.5 md:px-3.5 py-1 px-2 w-search m-auto relative left-3 top-4 rounded-md md:w-96 md:h-11 h-7 border md:rounded-2xl md:relative md:left-56 md:top-10 border-borderColor bg-generalColor"
       />
       {/* <Ads /> */}
       <Category />
-      <div className="md:ml-72 px-3 relative bottom-10">
-        <div className="grid md:gap-10  lg:grid-cols-4 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-5 px-5">
+      <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 lg:pb-24 lg:hidden md:hidden flex  justify-between relative top-20">
+        <h2 className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white">
+          All Category
+        </h2>
+        <div className="flex"><Link to="/no-page" className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white mr-20">View All</Link><GoArrowRight className="text-white text-xl relative top-4 right-6" /></div>
+        
+      </div>
+      <div className="md:ml-72 px-3 relative bottom-10 lg:bottom-32">
+        <div className="grid md:gap-10  lg:grid-cols-4 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-5 px-5 mt-40">
           <Items
             itemImage={itemData[0].itemImage}
             itemName={itemData[0].itemName}
@@ -159,10 +168,12 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 lg:pb-24">
+      <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 lg:pb-24 flex justify-between">
         <h2 className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white">
           New Arrival
         </h2>
+        <div className="flex lg:hidden md:hidden" ><Link to="/no-page" className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white mr-20 ">View All</Link><GoArrowRight className="text-white text-xl relative top-4 right-6" /></div>
+      
       </div>
       <div className=" px-5 lg:px-5">
         <div className="grid xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-5">

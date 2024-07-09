@@ -3,14 +3,13 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './Routes/Home'
 import ShoppingCart from './Routes/ShoppingCart'
 import CheckOut from './Routes/CheckOut'
-import Navbar from './components/Navbar'
+import Header from './components/Header'
 import NoPage from './Routes/NoPage'
-import Footer from './components/Footer'
 
 const App = () => {
   return (
     <div className='overflow-x-hidden'>
-      <Navbar />
+      <Header />
       <Routes>
         <Route path='/' element = {<Home />} />
         <Route path='/shopping-cart' element = {<ShoppingCart />} />
