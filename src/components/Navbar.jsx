@@ -50,8 +50,8 @@ const Navbar = () => {
           <Navlink />
         </div>
         <div className="md:hidden text-white">
-          <button onClick={toggleNavbar} className="object-right relative top-3">
-            {isOpen ? <FaTimes classname="text-2xl"/> : <IoIosMenu className="text-2xl" />}
+          <button onClick={toggleNavbar} className="object-right relative top-3 ml-3">
+            {isOpen ? <FaTimes classname="text-3xl"/> : <IoIosMenu className="text-3xl" />}
           </button>
         </div>
       </nav>
