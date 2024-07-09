@@ -19,7 +19,7 @@ const Home = () => {
         placeholder="Search..."
         className="md:py-1.5 md:px-3.5 py-1 px-2 w-search m-auto relative left-3 top-4 rounded-md md:w-96 md:h-11 h-7 border md:rounded-2xl md:relative md:left-56 md:top-10 border-borderColor bg-generalColor"
       />
-      {/* <Ads /> */}
+      <Ads />
       <Category />
       <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 lg:pb-24 lg:hidden md:hidden flex  justify-between relative top-20">
         <h2 className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white">

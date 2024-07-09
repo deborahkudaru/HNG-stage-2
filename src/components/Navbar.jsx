@@ -50,9 +50,9 @@ const Navbar = () => {
         <div className="w-full justify-between hidden  md:flex lg:flex">
           <Navlink />
         </div>
-        <div className="md:hidden text-rose-500">
+        <div className="md:hidden text-white">
           <button onClick={toggleNavbar} className="object-right">
-            {isOpen ? <FaTimes /> : <RiMenu3Fill className="text-4xl" />}
+            {isOpen ? <FaTimes classname="text-2xl"/> : <RiMenu3Fill className="text-2xl" />}
           </button>
         </div>
       </nav>
@@ -61,7 +61,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/about"
-              className="text-slate-400  hover:text-rose-500 transition duration-300"
+              className="text-white hover:text-orange-200 transition duration-300"
             >
               Home
             </Link>
@@ -69,25 +69,33 @@ const Navbar = () => {
           <li>
             <Link
               to="/experience"
-              className="text-slate-400 hover:text-rose-500 transition duration-300"
-            >
-              
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/project"
-              className="text-slate-400 hover:text-rose-500 transition duration-300"
+              className="text-white hover:text-orange-200 transition duration-300"
             >
               Market Place
             </Link>
           </li>
           <li>
             <Link
-              to="/contact"
-              className="text-slate-400 hover:text-rose-500 transition duration-300"
+              to="/project"
+              className="text-white hover:text-orange-200 transition duration-300"
             >
-              Contact
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="text-white hover:text-orange-200 transition duration-300"
+            >
+              Reviews
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="text-white hover:text-orange-200 transition duration-300"
+            >
+              Delivery
             </Link>
           </li>
         </ul>

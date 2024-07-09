@@ -21,7 +21,7 @@ const Calc = (props) => {
             alt=""
             className="lg:w-imageW lg:h-imageH  w-20 mt-4 lg:left-10 relative left-5"
           />
-          <p className="lg:text-2xl text-sm lg:mt-10 mt-10 relative ml-12 lg:ml-16">
+          <p className="lg:text-2xl text-sm lg:mt-10 mt-10 relative ml-12 lg:ml-16 w-10">
             {props.name}
           </p>
 
@@ -52,7 +52,7 @@ const Calc = (props) => {
         </div>
       </div>
 
-      <button className="relative lg:left-2/3 lg:bottom-16  bottom-16 left-72 lg:ml-52 ml-20 lg:text-2xl text-base">
+      <button className="relative lg:left-2/3 lg:bottom-16  bottom-16 left-56 lg:ml-52 ml-20 lg:text-2xl text-base">
         <LiaTimesSolid />
       </button>
     </div>
