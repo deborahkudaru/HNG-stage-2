@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=" flex xl:gap-20 lg:gap-20 gap-16 md:gap-20 lg:h-footerHeight  bg-customOrange mt-10 text-white font-popins pb-10 pr-12">
+    <div className=" flex xl:gap-28 lg:gap-20 gap-8 md:gap-20 lg:h-footerHeight  bg-customOrange mt-10 text-white font-popins pb-10 pr-12">
       <Logo />
       <div className="lg:flex lg:flex-col lg:ml-20 relative top-5 lg:gap-4 lg:visible hidden">
-        <h4 className="lg:text-2xl text-sm ">About Shop Fancy</h4>
+        <h4 className="lg:text-xl text-sm ">About Shop Fancy</h4>
         <Link
           to="/no-page"
           className="lg:text-base text-small hover:text-orange-200"
@@ -26,7 +26,7 @@ const Footer = () => {
         </Link>
       </div>
       <div className="flex flex-col relative top-5 lg:gap-4 gap-2">
-        <h4 className="lg:text-2xl text-sm">Payment</h4>
+        <h4 className="lg:text-xl text-sm">Payment</h4>
         <Link
           to="/no-page"
           className="lg:text-base text-small hover:text-orange-200"
@@ -47,7 +47,7 @@ const Footer = () => {
         </Link>
       </div>
       <div className="flex flex-col relative top-5 lg:gap-4 gap-2">
-        <h4 className="lg:text-2xl text-sm">Terms & Policy</h4>
+        <h4 className="lg:text-xl text-sm">Terms & Policy</h4>
         <Link
           to="/no-page"
           className="lg:text-base text-small hover:text-orange-200"

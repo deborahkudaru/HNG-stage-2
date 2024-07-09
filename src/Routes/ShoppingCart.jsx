@@ -15,9 +15,16 @@ const ShoppingCart = () => {
     <div>
       <div className="lg:pl-14 px-7 pt-8">
         <div className=" font-popins pb-7">
-          <h2 className="lg:text-arrival lg:text-start text-center text-2xl">
-            Shopping Cart
-          </h2>
+          <div>
+            <Link to="/">
+              {" "}
+              <GoArrowLeft className="flex lg:hidden relative top-7 text-2xl" />{" "}
+            </Link>
+            <h2 className="lg:text-arrival lg:text-start text-center text-2xl">
+              Shopping Cart
+            </h2>
+          </div>
+
           <div className="lg:flex mt-6 lg:visible hidden">
             <p className="text-2xl">Product Detail</p>
             <p className="text-2xl ml-52">Quantity</p>
@@ -67,7 +74,7 @@ const ShoppingCart = () => {
               </div>
             </div>
 
-            <div className="lg:flex gap-2 text-xl border-customOrange text-customOrange py-3 px-4 border rounded-lg mt-10 lg:visible hidden">
+            <div className="lg:flex gap-2 text-xl border-customOrange text-customOrange py-3 px-4 border rounded-lg mt-10 lg:visible hidden hover:bg-customOrange hover:text-white">
               <GoArrowLeft className="mt-1" />
               <Link to="/" className="">
                 Back to Shop
@@ -75,20 +82,28 @@ const ShoppingCart = () => {
             </div>
           </div>
           <div>
-            <p className="font-popins mt-5 lg:text-xl text-lg">
-              Sub-Total <span className="text-borderColor">(Tax Incl.)</span>
-            </p>
-            <p className="font-popins mt-3 lg:text-xl text-lg">
-              Promo <span className="text-borderColor">(15%)</span>
-            </p>
-            <hr className="border-t-2 border-dotted border-gray-700 mt-2" />
-
-            <p className="text-customBlack font-popins mt-3 lg:text-xl text-lg font-semibold">
-              TOTAL
-            </p>
-            <div className="lg:flex gap-2 font-popins text-white lg:rounded-lg lg:py-3 lg:px-4 lg:text-xl bg-customOrange mt-4 w-48 py-2 pl-11 rounded-md m-auto mb-2">
+            <table className="">
+              <tr>
+                <td className="font-popins mt-5 lg:text-xl text-lg">
+                  Sub-Total <span className="text-borderColor">(Tax incl)</span>
+                </td>
+                <td className="font-popins mt-5 lg:text-xl text-lg">N33,000</td>
+              </tr>
+              <tr>
+                <td className="font-popins mt-5 lg:text-xl text-lg">
+                  Promo <span className="text-borderColor">(15%)</span>
+                </td>
+                <td className="font-popins mt-5 lg:text-xl text-lg">N4,950</td>
+              </tr>
+              <hr className="border-t-2 border-dotted border-gray-700 mt-2" />
+              <tr>
+                <td className="font-popins mt-5 lg:text-xl text-lg">Total</td>
+                <td className="font-popins mt-5 lg:text-xl text-lg">N28,050</td>
+              </tr>
+            </table>
+            <div className="lg:flex gap-2 font-popins text-white lg:rounded-lg lg:py-3 lg:px-4 lg:text-xl bg-customOrange mt-4 w-48 py-2 pl-11 rounded-md m-auto mb-2 hover:bg-orange-400">
               <Link to="/check-out">Check-Out</Link>
-              <GoArrowRight className="mt-1 g:visible hidden" />
+              <GoArrowRight className="mt-1 lg:flex lg:visible hidden" />
             </div>
           </div>
         </div>
@@ -99,60 +114,60 @@ const ShoppingCart = () => {
         </h2>
       </div>
       <div className="px-5">
-      <div className="grid xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-5">
-        <Like
-          itemImage={like[0].itemImage}
-          itemName={like[0].itemName}
-          price={like[0].price}
-          rating={like[0].rating}
-          rating2={like[0].rating2}
-          rating3={like[0].rating3}
-          rating4={like[0].rating4}
-          rating5={like[0].rating5}
-        />
-        <Like
-          itemImage={like[1].itemImage}
-          itemName={like[1].itemName}
-          price={like[1].price}
-          rating={like[1].rating}
-          rating2={like[1].rating2}
-          rating3={like[1].rating3}
-          rating4={like[1].rating4}
-          rating5={like[1].rating5}
-        />
-        <Like
-          itemImage={like[2].itemImage}
-          itemName={like[2].itemName}
-          price={like[2].price}
-          rating={like[2].rating}
-          rating2={like[2].rating2}
-          rating3={like[2].rating3}
-          rating4={like[2].rating4}
-          rating5={like[2].rating5}
-        />
-        <Like
-          itemImage={like[3].itemImage}
-          itemName={like[3].itemName}
-          price={like[3].price}
-          rating={like[3].rating}
-          rating2={like[3].rating2}
-          rating3={like[3].rating3}
-          rating4={like[3].rating4}
-          rating5={like[3].rating5}
-        />
-        <Like
-          itemImage={like[4].itemImage}
-          itemName={like[4].itemName}
-          price={like[4].price}
-          rating={like[4].rating}
-          rating2={like[4].rating2}
-          rating3={like[4].rating3}
-          rating4={like[4].rating4}
-          rating5={like[4].rating5}
-        />
+        <div className="grid xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-5">
+          <Like
+            itemImage={like[0].itemImage}
+            itemName={like[0].itemName}
+            price={like[0].price}
+            rating={like[0].rating}
+            rating2={like[0].rating2}
+            rating3={like[0].rating3}
+            rating4={like[0].rating4}
+            rating5={like[0].rating5}
+          />
+          <Like
+            itemImage={like[1].itemImage}
+            itemName={like[1].itemName}
+            price={like[1].price}
+            rating={like[1].rating}
+            rating2={like[1].rating2}
+            rating3={like[1].rating3}
+            rating4={like[1].rating4}
+            rating5={like[1].rating5}
+          />
+          <Like
+            itemImage={like[2].itemImage}
+            itemName={like[2].itemName}
+            price={like[2].price}
+            rating={like[2].rating}
+            rating2={like[2].rating2}
+            rating3={like[2].rating3}
+            rating4={like[2].rating4}
+            rating5={like[2].rating5}
+          />
+          <Like
+            itemImage={like[3].itemImage}
+            itemName={like[3].itemName}
+            price={like[3].price}
+            rating={like[3].rating}
+            rating2={like[3].rating2}
+            rating3={like[3].rating3}
+            rating4={like[3].rating4}
+            rating5={like[3].rating5}
+          />
+          <Like
+            itemImage={like[4].itemImage}
+            itemName={like[4].itemName}
+            price={like[4].price}
+            rating={like[4].rating}
+            rating2={like[4].rating2}
+            rating3={like[4].rating3}
+            rating4={like[4].rating4}
+            rating5={like[4].rating5}
+          />
+        </div>
       </div>
-      </div>
-      
+
       <div className="lg:flex lg:gap-9 lg:buttons-two hidden lg:w-60 lg:m-auto lg:mt-10">
         <button className="bg-imageColor w-11 h-11 relative bottom-3 pr-6">
           {" "}
