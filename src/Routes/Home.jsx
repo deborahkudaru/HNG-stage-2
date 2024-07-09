@@ -6,6 +6,7 @@ import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
 import Arrival from "../components/Arrival";
 import newArrival from "../newArrival";
+import Ads from "../components/Ads";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -16,8 +17,9 @@ const Home = () => {
         placeholder="Search..."
         className="md:py-1.5 md:px-3.5 py-1 px-2 w-search relative left-3 top-4 rounded-md md:w-96 md:h-11 h-7 border md:rounded-2xl md:relative md:left-56 md:top-10 border-borderColor bg-generalColor"
       />
+      <Ads />
       <Category />
-      <div className="md:ml-72 relative bottom-10">
+      <div className="md:ml-72 relative bottom-32">
         <div className="grid lg:grid-cols-4 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-3 px-5">
           <Items
             itemImage={itemData[0].itemImage}
@@ -145,20 +147,20 @@ const Home = () => {
         </div>
       </div>
       <div className="lg:flex lg:gap-9 lg:buttons lg:pb-7 hidden w-60 m-auto">
-        <button className="bg-imageColor w-11 h-11 relative bottom-3">
+        <button className="bg-imageColor w-11 h-11 relative bottom-3 pr-6">
           {" "}
           <GrPrevious className="relative left-3" />
         </button>
-        <p>1</p>
+        <p className="bg-customOrange h-7 px-3 ">1</p>
         <p>of</p>
         <p>20</p>
-        <button className="bg-imageColor w-11 h-11 relative bottom-3">
+        <button className="bg-imageColor w-11 h-11 relative bottom-3 pr-6">
           <GrNext className="relative left-3" />
         </button>
       </div>
 
-      <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-10 w-full">
-        <h2 className="relative lg:top-7 left-12 top-3 font-popins lg:text-arrival text-xl text-white">
+      <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 w-full">
+        <h2 className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white">
           New Arrival
         </h2>
       </div>
@@ -268,14 +270,14 @@ const Home = () => {
       </div>
 
       <div className="lg:flex lg:gap-9 lg:buttons-two hidden lg:w-60 lg:m-auto lg:mt-10">
-        <button className="bg-imageColor w-11 h-11 relative bottom-3">
+        <button className="bg-imageColor w-11 h-11 relative bottom-3 pr-6">
           {" "}
           <GrPrevious className="relative left-3" />
         </button>
-        <p>1</p>
+        <p className="bg-customOrange h-7 px-3 ">1</p>
         <p>of</p>
         <p>20</p>
-        <button className="bg-imageColor w-11 h-11 relative bottom-3">
+        <button className="bg-imageColor w-11 h-11 relative bottom-3 pr-6">
           <GrNext className="relative left-3" />
         </button>
       </div>

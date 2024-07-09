@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoCartOutline } from "react-icons/io5";
 
 const Items = (props) => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
   return (
-    <div className="bg-white lg:w-60  md:w-52 lg:pb-5 pb-2 rounded-lg">
+    <div className="bg-white lg:w-60  md:w-52  pb-2 rounded-lg">
       <div className="bg-imageColor rounded-t-lg">
-        <button className="lg:ml-52  ml-36 text-2xl">
+        <button onClick={togglePopup} className="lg:ml-52  ml-36 text-2xl">
           <IoCartOutline />
         </button>
+        {showPopup && (<div className="fixed top-4 font-popins bg-white text-customOrange border rounded-lg border-customOrange py-3 px-5"><p className="mb-5">Added to cart!</p> <button className=" bg-customOrange rounded-sm text-white py-1 px-2" onClick={togglePopup}>Ok</button></div>)}
 
-        <img src={props.itemImage} alt="" className="lg:w-48 lg:h-48 w-32 h-32 m-auto" />
+        <img
+          src={props.itemImage}
+          alt=""
+          className="lg:w-48 lg:h-48 w-32 h-32 m-auto"
+        />
       </div>
       <p className="font-popins lg:text-base text-sm font-normal mt-2 relative left-2">
         {props.itemName}

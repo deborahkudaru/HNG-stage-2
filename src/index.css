@@ -20,3 +20,7 @@ body{
   left: 563px;
   top: 30px;
 }
+
+input[type="checkbox"]:checked::before {
+  background-color: #ebebeb; 
+}

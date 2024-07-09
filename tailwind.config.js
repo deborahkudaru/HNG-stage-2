@@ -18,7 +18,8 @@ module.exports = {
         calcW:"1020px",
         input: "375px",
         input2: "165px",
-        search: "396px"
+        search: "385px",
+        adH: "522px"
       },
       height: {
         navHeight: "80px",
@@ -28,7 +29,8 @@ module.exports = {
         arrivalHeight: "112px",
         footerHeight: "215px",
         imageH: "83px",
-        calcH: "120px"
+        calcH: "120px",
+        adW: "241px"
       },
       fontFamily: {
         popins: ["Poppins", "sans-serif"],

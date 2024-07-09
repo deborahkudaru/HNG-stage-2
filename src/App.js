@@ -5,6 +5,7 @@ import ShoppingCart from './Routes/ShoppingCart'
 import CheckOut from './Routes/CheckOut'
 import Navbar from './components/Navbar'
 import NoPage from './Routes/NoPage'
+import Footer from './components/Footer'
 
 const App = () => {
   return (

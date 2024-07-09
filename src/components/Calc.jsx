@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LiaTimesSolid } from "react-icons/lia";
 
 const Calc = (props) => {
   const [count, setCount] = useState(0);
@@ -40,10 +41,12 @@ const Calc = (props) => {
           </button>
           <div className="lg:flex relative left-80 ml-4 hidden">
             <p className="text-2xl lg:mt-10 mt-5 relative">{props.price}</p>
-            <p className="text-2xl lg:mt-10 mt-5 relative"></p>
+            <p className="text-2xl lg:mt-10 mt-5 relative ml-28">{props.total}</p>
           </div>
+         
         </div>
-        {/* <button>x</button> */}
+        <button className="relative left-2/3 bottom-16 ml-52 text-2xl"><LiaTimesSolid /></button>
+        
     
 
       

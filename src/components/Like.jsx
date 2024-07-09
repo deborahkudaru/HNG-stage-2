@@ -1,12 +1,15 @@
 import React from "react";
-import { IoCartOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { IoCartOutline } from "react-icons/io5";
 
-const Arrival = (props) => {
+const Like = (props) => {
   return (
     <div className="bg-white lg:w-60 lg:pb-5 pb-2 rounded-lg">
       <div className="bg-imageColor rounded-t-lg">
-        <Link to="/shopping-cart" className="relative lg:left-52 left-40 text-2xl">
+        <Link
+          to="/shopping-cart"
+          className="relative lg:left-52 left-40 text-2xl"
+        >
           {" "}
           <IoCartOutline />
         </Link>
@@ -34,4 +37,4 @@ const Arrival = (props) => {
   );
 };
 
-export default Arrival;
+export default Like;
