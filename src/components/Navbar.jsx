@@ -11,7 +11,7 @@ const Navbar = () => {
     <div>
       <nav className="bg-customOrange h-navHeight">
         <Logo />
-        <ul className="flex justify-between w-navItemWidth h-navItemHeight m-auto text-xl relative bottom-5 text-white font-popins flex-wrap  hidden ">
+        <ul className="lg:flex justify-between w-navItemWidth  m-auto text-xl relative bottom-5 text-white font-popins flex-wrap hidden">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -38,8 +38,8 @@ const Navbar = () => {
             <IoCartOutline />
           </Link>
           <Link to="/no-page" className="">
-            {/* <img src={user} alt="" /> */}
-            <FaRegCircleUser />
+            <img src={user} alt="" className="lg-visible"/>
+            {/* <FaRegCircleUser className="lg-hidden visible"/> */}
           </Link>
         </div>
       </nav>

@@ -37,6 +37,7 @@ module.exports = {
       fontSize: {
         logo: "28px",
         arrival: "45px",
+        small: "10px"
       },
       colors: {
         borderColor: "#ababab",

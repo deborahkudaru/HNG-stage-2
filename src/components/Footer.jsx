@@ -8,38 +8,38 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=" flex gap-20 h-footerHeight w-arrivalWidth bg-customOrange mt-10 text-white font-popins pb-10">
+    <div className=" flex lg:gap-20 gap-7 lg:h-footerHeight  bg-customOrange mt-10 text-white font-popins pb-10">
       <Logo />
-      <div className="flex flex-col ml-20 relative top-5 gap-4">
-        <h4 className="text-2xl">About Shop Fancy</h4>
-        <Link to="/no-page">Contact Us</Link>
-        <Link to="/no-page">About Us</Link>
+      <div className="lg:flex lg:flex-col lg:ml-20 relative top-5 lg:gap-4 lg:visible hidden">
+        <h4 className="lg:text-2xl text-sm ">About Shop Fancy</h4>
+        <Link to="/no-page" className="lg:text-base text-small">Contact Us</Link>
+        <Link to="/no-page" className="lg:text-base text-small">About Us</Link>
       </div>
-      <div className="flex flex-col relative top-5 gap-4">
-        <h4 className="text-2xl">Payment</h4>
-        <Link to="/no-page">Mastercard</Link>
-        <Link to="/no-page">Visa</Link>
-        <Link to="/no-page">Verve</Link>
+      <div className="flex flex-col relative top-5 lg:gap-4 gap-2">
+        <h4 className="lg:text-2xl text-sm">Payment</h4>
+        <Link to="/no-page" className="lg:text-base text-small">Mastercard</Link>
+        <Link to="/no-page" className="lg:text-base text-small">Visa</Link>
+        <Link to="/no-page" className="lg:text-base text-small">Verve</Link>
       </div>
-      <div className="flex flex-col relative top-5 gap-4">
-        <h4 className="text-2xl">Terms & Policy</h4>
-        <Link to="/no-page">Terms & Conditions</Link>
-        <Link to="/no-page">Privacy Policy</Link>
+      <div className="flex flex-col relative top-5 lg:gap-4 gap-2">
+        <h4 className="lg:text-2xl text-sm">Terms & Policy</h4>
+        <Link to="/no-page" className="lg:text-base text-small">Terms & Conditions</Link>
+        <Link to="/no-page" className="lg:text-base text-small">Privacy Policy</Link>
       </div>
-      <div className="flex relative top-5 gap-4 text-4xl">
+      <div className="flex relative top-5 lg:gap-4 gap-2 lg:text-4xl text-xl">
         <a href="">
           {" "}
-          <FaFacebookF className="border border-white p-1 rounded-full" />
+          <FaFacebookF className="border border-white lg:p-1 p-0.5 rounded-full" />
         </a>
         <a href="https://www.instagram.com/inemesittt?igsh=em41b3RpeGhqZDh1&utm_source=qr">
-          <FaInstagram  className="border border-white p-1 rounded-full"/>
+          <FaInstagram  className="border border-white lg:p-1 p-0.5 rounded-full"/>
         </a>
         <a href="https://pin.it/48lOySLLN">
-          <FaPinterestP  className="border border-white p-1 rounded-full"/>
+          <FaPinterestP  className="border border-white lg:p-1 p-0.5 rounded-full"/>
         </a>
         <a href="">
           {" "}
-          <FaXTwitter  className="border border-white p-1 rounded-full"/>
+          <FaXTwitter  className="border border-white lg:p-1 p-0.5 rounded-full"/>
         </a>
       </div>
     </div>

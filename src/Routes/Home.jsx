@@ -14,11 +14,11 @@ const Home = () => {
       <input
         type="text"
         placeholder="Search..."
-        className="md:py-1.5 md:px-3.5 py-1 px-2 w-search relative left-10 top-4 rounded-md md:w-96 md:h-11 h-7 border md:rounded-2xl md:relative md:left-56 md:top-10 border-borderColor bg-generalColor"
+        className="md:py-1.5 md:px-3.5 py-1 px-2 w-search relative left-3 top-4 rounded-md md:w-96 md:h-11 h-7 border md:rounded-2xl md:relative md:left-56 md:top-10 border-borderColor bg-generalColor"
       />
-      <Category/>
-      <div className="ml-72 relative bottom-10">
-        <div className="flex gap-5 mb-7">
+      <Category />
+      <div className="md:ml-72 relative bottom-10">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-3 px-5">
           <Items
             itemImage={itemData[0].itemImage}
             itemName={itemData[0].itemName}
@@ -44,9 +44,6 @@ const Home = () => {
             price={itemData[3].price}
             rating={itemData[3].rating}
           />
-        </div>
-
-        <div className="flex gap-5 mb-7">
           <Items
             itemImage={itemData[4].itemImage}
             itemName={itemData[4].itemName}
@@ -72,8 +69,6 @@ const Home = () => {
             price={itemData[7].price}
             rating={itemData[7].rating}
           />
-        </div>
-        <div className="flex gap-5 ">
           <Items
             itemImage={itemData[8].itemImage}
             itemName={itemData[8].itemName}
@@ -101,7 +96,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="flex gap-9 buttons pb-7">
+      <div className="lg:flex lg:gap-9 lg:buttons lg:pb-7 hidden">
         <button className="bg-imageColor w-11 h-11 relative bottom-3">
           {" "}
           <GrPrevious className="relative left-3" />
@@ -114,13 +109,13 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="h-arrivalHeight bg-customOrange mb-10">
-        <h2 className="relative top-7 left-12 font-popins text-arrival text-white">
+      <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-10 w-full">
+        <h2 className="relative lg:top-7 left-12 top-3 font-popins lg:text-arrival text-xl text-white">
           New Arrival
         </h2>
       </div>
-      <div className="ml-8">
-        <div className="flex gap-5 mb-7 ">
+      <div className="">
+        <div className="grid lg:grid-cols-5 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-3 px-5">
           <Arrival
             itemImage={newArrival[0].itemImage}
             itemName={newArrival[0].itemName}
@@ -151,9 +146,6 @@ const Home = () => {
             price={newArrival[4].price}
             rating={newArrival[4].rating}
           />
-        </div>
-
-        <div className="flex gap-5">
           <Arrival
             itemImage={newArrival[5].itemImage}
             itemName={newArrival[5].itemName}
@@ -187,7 +179,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex gap-9 buttons-two pb-5">
+      <div className="lg:flex lg:gap-9 lg:buttons-two lg:pb-5 hidden">
         <button className="bg-imageColor w-11 h-11 relative bottom-3">
           {" "}
           <GrPrevious className="relative left-3" />
