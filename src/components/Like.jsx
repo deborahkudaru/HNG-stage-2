@@ -12,7 +12,7 @@ const Like = (props) => {
       <div className="bg-imageColor rounded-t-lg">
         <button onClick={togglePopup}
           to="/shopping-cart"
-          className="relative lg:left-52 left-36 text-2xl"
+          className="relative lg:left-52 left-36 text-2xl hover:text-customOrange"
         >
           {" "}
           <IoCartOutline />

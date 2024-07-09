@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Icons = () => {
   return (
     <div>
-      <div className="flex justify-end text-white md:relative md:bottom-5 md:left-3/4 relative left-2/3 ml-8 bottom-5 lg:ml-32 lg:mb-5 md:w-32 w-24">
+      <div className="flex justify-end text-white md:relative md:bottom-5 md:left-3/4 relative left-2/3 lg:bottom-10 ml-8 bottom-5 lg:ml-32 md:w-32 w-24">
         <Link
           to="/no-page"
           className="lg:text-4xl text-3xl hover:text-orange-200"

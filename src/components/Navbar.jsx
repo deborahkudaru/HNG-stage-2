@@ -6,7 +6,7 @@ import { FaTimes } from "react-icons/fa";
 const Navlink = () => {
   return (
     <div>
-      <ul className="flex justify-between w-navItemWidth lg:ml-96 md:ml-52 text-xl relative bottom-2 text-white font-popins flex-wrap">
+      <ul className="flex justify-between w-navItemWidth lg:ml-96 lg:mt-5 md:ml-52 text-xl relative bottom-2 text-white font-popins flex-wrap">
         <li>
           <Link className="hover:text-orange-200" to="/">
             Home
