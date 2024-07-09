@@ -21,7 +21,7 @@ const Icons = () => {
         >
           <IoCartOutline />
         </Link>
-        <Link to="/no-page" className="w-7 h-7">
+        <Link to="/no-page" className="w-7 h-7 lg:h-max lg:w-max">
           <img src={user} alt="" />
         </Link>
       </div>

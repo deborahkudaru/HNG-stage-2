@@ -169,7 +169,7 @@ const Home = () => {
       </div>
 
       <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 lg:pb-24 flex justify-between relative lg:bottom-32">
-        <h2 className="relative lg:top-10 left-6 font-bold top-3 font-popins lg:text-arrival text-md text-white">
+        <h2 className="relative lg:top-5 left-6 lg:left-12 font-bold lg:font-normal  top-3 font-popins lg:text-arrival text-md text-white">
           New Arrival
         </h2>
         <div className="flex lg:hidden md:hidden" ><Link to="/no-page" className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-md text-white mr-20 ">View All</Link><GoArrowRight className="text-white text-xl relative top-4 right-6" /></div>
