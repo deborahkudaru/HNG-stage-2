@@ -96,7 +96,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="lg:flex lg:gap-9 lg:buttons lg:pb-7 hidden">
+      <div className="lg:flex lg:gap-9 lg:buttons lg:pb-7 hidden w-60 m-auto">
         <button className="bg-imageColor w-11 h-11 relative bottom-3">
           {" "}
           <GrPrevious className="relative left-3" />
@@ -179,7 +179,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="lg:flex lg:gap-9 lg:buttons-two lg:pb-5 hidden">
+      <div className="lg:flex lg:gap-9 lg:buttons-two hidden lg:w-60 lg:m-auto lg:mt-10">
         <button className="bg-imageColor w-11 h-11 relative bottom-3">
           {" "}
           <GrPrevious className="relative left-3" />

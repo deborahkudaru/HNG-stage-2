@@ -11,7 +11,7 @@ const Navbar = () => {
     <div>
       <nav className="bg-customOrange h-navHeight">
         <Logo />
-        <ul className="lg:flex justify-between w-navItemWidth  m-auto text-xl relative bottom-5 text-white font-popins flex-wrap hidden">
+        <ul className="lg:flex justify-between w-navItemWidth  m-auto text-xl relative bottom-2 text-white font-popins flex-wrap hidden">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -29,12 +29,12 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="flex justify-between text-white md:relative md:bottom-12 md:left-3/4 relative left-1/2 ml-28 md:w-32 w-16 ">
-          <Link to="/no-page" className="md:text-4xl text-xl">
+        <div className="flex justify-between text-white md:relative md:bottom-12 md:left-3/4 relative left-1/2 ml-28 md:w-32 w-24 ">
+          <Link to="/no-page" className="lg:text-4xl text-3xl">
             {" "}
             <IoNotificationsOutline />
           </Link>
-          <Link to="/shopping-cart" className="md:text-4xl text-xl">
+          <Link to="/shopping-cart" className="lg:text-4xl text-3xl">
             <IoCartOutline />
           </Link>
           <Link to="/no-page" className="">

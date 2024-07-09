@@ -8,7 +8,7 @@ import { GoArrowRight } from "react-icons/go";
 const ShoppingCart = () => {
   return (
     <div>
-      <div className="lg:pl-14 px-6 pt-8">
+      <div className="lg:pl-14 px-7 pt-8">
         <div className=" font-popins pb-7">
           <h2 className="lg:text-arrival lg:text-start text-center text-2xl">
             Shopping Cart

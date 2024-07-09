@@ -6,7 +6,7 @@ import metal from "./images/metal.png";
 const cart = [
   {
     image: sippy,
-    imageName: "Sippy Cup",
+    imageName: "Suppy Cup",
     quantity: "",
     price: "₦10,000",
     total: "₦20,000",
