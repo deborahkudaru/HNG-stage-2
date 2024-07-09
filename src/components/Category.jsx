@@ -4,7 +4,7 @@ import { SlArrowUp } from "react-icons/sl";
 
 const Category = () => {
   return (
-    <div className="lg:relative lg:left-14 lg:top-28 lg:visible md:visible">
+    <div className="lg:relative lg:left-14 lg:top-72 lg:flex lg:flex-col hidden">
       <h3 className="font-popins text-2xl pb-5 flex gap-2">
         Category{" "}
         <button>

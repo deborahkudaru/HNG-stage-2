@@ -24,6 +24,10 @@ const Home = () => {
             itemName={itemData[0].itemName}
             price={itemData[0].price}
             rating={itemData[0].rating}
+            rating2={itemData[0].rating2}
+            rating3={itemData[0].rating3}
+            rating4={itemData[0].rating4}
+            rating5={itemData[0].rating5}
           />
 
           <Items
@@ -31,24 +35,40 @@ const Home = () => {
             itemName={itemData[1].itemName}
             price={itemData[1].price}
             rating={itemData[1].rating}
+            rating2={itemData[1].rating2}
+            rating3={itemData[1].rating3}
+            rating4={itemData[1].rating4}
+            rating5={itemData[1].rating5}
           />
           <Items
             itemImage={itemData[2].itemImage}
             itemName={itemData[2].itemName}
             price={itemData[2].price}
             rating={itemData[2].rating}
+            rating2={itemData[2].rating2}
+            rating3={itemData[2].rating3}
+            rating4={itemData[2].rating4}
+            rating5={itemData[2].rating5}
           />
           <Items
             itemImage={itemData[3].itemImage}
             itemName={itemData[3].itemName}
             price={itemData[3].price}
             rating={itemData[3].rating}
+            rating2={itemData[3].rating2}
+            rating3={itemData[3].rating3}
+            rating4={itemData[3].rating4}
+            rating5={itemData[3].rating5}
           />
           <Items
             itemImage={itemData[4].itemImage}
             itemName={itemData[4].itemName}
             price={itemData[4].price}
             rating={itemData[4].rating}
+            rating2={itemData[4].rating2}
+            rating3={itemData[4].rating3}
+            rating4={itemData[4].rating4}
+            rating5={itemData[4].rating5}
           />
 
           <Items
@@ -56,24 +76,40 @@ const Home = () => {
             itemName={itemData[5].itemName}
             price={itemData[5].price}
             rating={itemData[5].rating}
+            rating2={itemData[5].rating2}
+            rating3={itemData[5].rating3}
+            rating4={itemData[5].rating4}
+            rating5={itemData[5].rating5}
           />
           <Items
             itemImage={itemData[6].itemImage}
             itemName={itemData[6].itemName}
             price={itemData[6].price}
             rating={itemData[6].rating}
+            rating2={itemData[6].rating2}
+            rating3={itemData[6].rating3}
+            rating4={itemData[6].rating4}
+            rating5={itemData[6].rating5}
           />
           <Items
             itemImage={itemData[7].itemImage}
             itemName={itemData[7].itemName}
             price={itemData[7].price}
             rating={itemData[7].rating}
+            rating2={itemData[7].rating2}
+            rating3={itemData[7].rating3}
+            rating4={itemData[7].rating4}
+            rating5={itemData[7].rating5}
           />
           <Items
             itemImage={itemData[8].itemImage}
             itemName={itemData[8].itemName}
             price={itemData[8].price}
             rating={itemData[8].rating}
+            rating2={itemData[8].rating2}
+            rating3={itemData[8].rating3}
+            rating4={itemData[8].rating4}
+            rating5={itemData[8].rating5}
           />
 
           <Items
@@ -81,18 +117,30 @@ const Home = () => {
             itemName={itemData[9].itemName}
             price={itemData[9].price}
             rating={itemData[9].rating}
+            rating2={itemData[9].rating2}
+            rating3={itemData[9].rating3}
+            rating4={itemData[9].rating4}
+            rating5={itemData[9].rating5}
           />
           <Items
             itemImage={itemData[10].itemImage}
             itemName={itemData[10].itemName}
             price={itemData[10].price}
             rating={itemData[10].rating}
+            rating2={itemData[10].rating2}
+            rating3={itemData[10].rating3}
+            rating4={itemData[10].rating4}
+            rating5={itemData[10].rating5}
           />
           <Items
             itemImage={itemData[11].itemImage}
             itemName={itemData[11].itemName}
             price={itemData[11].price}
             rating={itemData[11].rating}
+            rating2={itemData[11].rating2}
+            rating3={itemData[11].rating3}
+            rating4={itemData[11].rating4}
+            rating5={itemData[11].rating5}
           />
         </div>
       </div>
@@ -121,60 +169,100 @@ const Home = () => {
             itemName={newArrival[0].itemName}
             price={newArrival[0].price}
             rating={newArrival[0].rating}
+            rating2={newArrival[0].rating2}
+            rating3={newArrival[0].rating3}
+            rating4={newArrival[0].rating4}
+            rating5={newArrival[0].rating5}
           />
           <Arrival
             itemImage={newArrival[1].itemImage}
             itemName={newArrival[1].itemName}
             price={newArrival[1].price}
             rating={newArrival[1].rating}
+            rating2={newArrival[1].rating2}
+            rating3={newArrival[1].rating3}
+            rating4={newArrival[1].rating4}
+            rating5={newArrival[1].rating5}
           />
           <Arrival
             itemImage={newArrival[2].itemImage}
             itemName={newArrival[2].itemName}
             price={newArrival[2].price}
             rating={newArrival[2].rating}
+            rating2={newArrival[2].rating2}
+            rating3={newArrival[2].rating3}
+            rating4={newArrival[2].rating4}
+            rating5={newArrival[2].rating5}
           />
           <Arrival
             itemImage={newArrival[3].itemImage}
             itemName={newArrival[3].itemName}
             price={newArrival[3].price}
             rating={newArrival[3].rating}
+            rating2={newArrival[3].rating2}
+            rating3={newArrival[3].rating3}
+            rating4={newArrival[3].rating4}
+            rating5={newArrival[3].rating5}
           />
           <Arrival
             itemImage={newArrival[4].itemImage}
             itemName={newArrival[4].itemName}
             price={newArrival[4].price}
             rating={newArrival[4].rating}
+            rating2={newArrival[4].rating2}
+            rating3={newArrival[4].rating3}
+            rating4={newArrival[4].rating4}
+            rating5={newArrival[4].rating5}
           />
           <Arrival
             itemImage={newArrival[5].itemImage}
             itemName={newArrival[5].itemName}
             price={newArrival[5].price}
             rating={newArrival[5].rating}
+            rating2={newArrival[5].rating2}
+            rating3={newArrival[5].rating3}
+            rating4={newArrival[5].rating4}
+            rating5={newArrival[5].rating5}
           />
           <Arrival
             itemImage={newArrival[6].itemImage}
             itemName={newArrival[6].itemName}
             price={newArrival[6].price}
             rating={newArrival[6].rating}
+            rating2={newArrival[6].rating2}
+            rating3={newArrival[6].rating3}
+            rating4={newArrival[6].rating4}
+            rating5={newArrival[6].rating5}
           />
           <Arrival
             itemImage={newArrival[7].itemImage}
             itemName={newArrival[7].itemName}
             price={newArrival[7].price}
             rating={newArrival[7].rating}
+            rating2={newArrival[7].rating2}
+            rating3={newArrival[7].rating3}
+            rating4={newArrival[7].rating4}
+            rating5={newArrival[7].rating5}
           />
           <Arrival
             itemImage={newArrival[8].itemImage}
             itemName={newArrival[8].itemName}
             price={newArrival[8].price}
             rating={newArrival[8].rating}
+            rating2={newArrival[8].rating2}
+            rating3={newArrival[8].rating3}
+            rating4={newArrival[8].rating4}
+            rating5={newArrival[8].rating5}
           />
           <Arrival
             itemImage={newArrival[9].itemImage}
             itemName={newArrival[9].itemName}
             price={newArrival[9].price}
             rating={newArrival[9].rating}
+            rating2={newArrival[9].rating2}
+            rating3={newArrival[9].rating3}
+            rating4={newArrival[9].rating4}
+            rating5={newArrival[9].rating5}
           />
         </div>
       </div>

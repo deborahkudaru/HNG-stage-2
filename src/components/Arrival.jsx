@@ -10,7 +10,11 @@ const Arrival = (props) => {
           <IoCartOutline />
         </button>
 
-        <img src={props.itemImage} alt="" className="lg:w-48 lg:h-48 w-32 h-32 m-auto" />
+        <img
+          src={props.itemImage}
+          alt=""
+          className="lg:w-48 lg:h-48 w-32 h-32 m-auto"
+        />
       </div>
       <p className="font-popins lg:text-base text-sm font-normal mt-2 relative left-2">
         {props.itemName}
@@ -18,7 +22,13 @@ const Arrival = (props) => {
       <p className="font-popins lg:text-base text-sm font-normal relative left-2">
         {props.price}
       </p>
-      <div className="text-star text-sm relative left-2">{props.rating}</div>
+      <div className="flex relative left-2 lg:text-base text-small">
+        <p>{props.rating}</p>
+        <p>{props.rating2}</p>
+        <p>{props.rating3}</p>
+        <p>{props.rating4}</p>
+        <p>{props.rating5}</p>
+      </div>
     </div>
   );
 };

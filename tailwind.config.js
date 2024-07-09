@@ -43,7 +43,8 @@ module.exports = {
         borderColor: "#ababab",
         star: "#FF9A3F",
         customOrange: "#ff7f3e",
-        customBlack: "#1e1e1e"
+        customBlack: "#1e1e1e",
+        star2: "#f1f1f1"
       },
       
     },
