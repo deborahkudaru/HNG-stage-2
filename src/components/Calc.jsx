@@ -25,7 +25,7 @@ const Calc = (props) => {
             {props.name}
           </p>
 
-          <div className="flex gap-0.5 ml-10 lg:ml-28">
+          <div className="flex gap-0.5 ml-10 lg:ml-52">
             <button
               onClick={decrement}
               className="lg:text-2xl md:text-2xl text-lg"
