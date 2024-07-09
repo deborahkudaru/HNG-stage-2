@@ -1,19 +1,33 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import { IoCartOutline } from "react-icons/io5";
 
 const Like = (props) => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
   return (
     <div className="bg-white lg:w-60 lg:pb-5 pb-2 rounded-lg">
       <div className="bg-imageColor rounded-t-lg">
-        <Link
+        <button onClick={togglePopup}
           to="/shopping-cart"
           className="relative lg:left-52 left-36 text-2xl"
         >
           {" "}
           <IoCartOutline />
-        </Link>
-
+        </button>
+        {showPopup && (
+          <div className="fixed top-4 font-popins bg-white text-customOrange border rounded-lg border-customOrange py-3 px-5">
+            <p className="mb-5">Added to cart!</p>{" "}
+            <button
+              className=" bg-customOrange rounded-sm text-white py-1 px-2"
+              onClick={togglePopup}
+            >
+              Ok
+            </button>
+          </div>
+        )}
         <img
           src={props.itemImage}
           alt=""

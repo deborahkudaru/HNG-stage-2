@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "./Logo";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
@@ -8,8 +7,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=" flex xl:gap-28 lg:gap-20 gap-7 md:gap-20 lg:h-footerHeight  bg-customOrange mt-10 text-white font-popins pb-10 pr-12">
-      <Logo />
+    <div className=" flex xl:gap-28 lg:gap-20 gap-4 md:gap-20 lg:h-footerHeight  bg-customOrange mt-10 text-white font-popins pb-10 pr-5">
+      <div className="">
+        <Link to="/" className="font-lemonda text-white lg:text-2xl sm:text-xl md:text-2xl relative top-5 lg:left-14 left-2">Shop FANCY!</Link>
+      </div>
       <div className="lg:flex lg:flex-col lg:ml-20 relative top-5 lg:gap-4 lg:visible hidden">
         <h4 className="lg:text-xl text-sm ">About Shop Fancy</h4>
         <Link
