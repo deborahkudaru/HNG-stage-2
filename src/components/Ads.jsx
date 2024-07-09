@@ -8,7 +8,7 @@ import cloud from "../images/cloud.png";
 const Ads = () => {
   return (
     <div className="flex gap-10 relative top-24">
-      <div className="w-adH h-adW font-popins rounded-2xl bg-white relative left-14 border border-customOrange">
+      <div className=" font-popins rounded-2xl bg-white relative left-14 border border-customOrange">
         <div className="pl-5 pt-10">
           <h2 className="text-3xl mt-3">CLEARANCE SALES!</h2>
           <h3 className="text-2xl mt-3 mb-10">UP TO 40% OFF</h3>
@@ -50,6 +50,8 @@ const Ads = () => {
           <img src={cloud} alt="cloud-mirror" className="relative left-80 bottom-60"/>
         </div>
       </div>
+
+      
     </div>
   );
 };

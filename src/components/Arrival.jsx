@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Arrival = (props) => {
   return (
-    <div className="bg-white lg:w-60 lg:pb-5 pb-2 rounded-lg">
+    <div className="bg-white xl:w- lg:w-60 lg:pb-5 w-40 pb-2 rounded-lg">
       <div className="bg-imageColor rounded-t-lg">
-        <Link to="/shopping-cart" className="relative lg:left-52 left-40 text-2xl">
+        <Link to="/shopping-cart" className="relative xl:left-52 lg:left-52 md:left-64 md:relative left-32 text-2xl">
           {" "}
           <IoCartOutline />
         </Link>

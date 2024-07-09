@@ -93,12 +93,13 @@ const ShoppingCart = () => {
           </div>
         </div>
       </div>
-      <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 w-full mt-20">
+      <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 w-full mt-20 lg:pb-24">
         <h2 className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white">
           You may also like
         </h2>
       </div>
-      <div className=" grid lg:grid-cols-5 lg:gap-6 px-5">
+      <div className="px-5">
+      <div className="grid xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-5">
         <Like
           itemImage={like[0].itemImage}
           itemName={like[0].itemName}
@@ -150,6 +151,8 @@ const ShoppingCart = () => {
           rating5={like[4].rating5}
         />
       </div>
+      </div>
+      
       <div className="lg:flex lg:gap-9 lg:buttons-two hidden lg:w-60 lg:m-auto lg:mt-10">
         <button className="bg-imageColor w-11 h-11 relative bottom-3 pr-6">
           {" "}

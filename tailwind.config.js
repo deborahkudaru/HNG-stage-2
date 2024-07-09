@@ -8,30 +8,34 @@ module.exports = {
         generalColor: "#ebebeb",
         imageColor: "#f1f1f1",
       },
-      width: {
-        navWidth: "1442px",
+
+      width:{
         navItemWidth: "551px",
-        catWidth: "143px",
-        catItemsWidth: "112px",
-        arrivalWidth: "1440px",
-        imageW: "83px",
-        calcW:"1020px",
-        input: "375px",
-        input2: "165px",
-        search: "385px",
-        adH: "522px"
       },
-      height: {
-        navHeight: "80px",
-        navItemHeight: "32px",
-        catHeight: "327px",
-        catItemsHeight: "275px",
-        arrivalHeight: "112px",
-        footerHeight: "215px",
-        imageH: "83px",
-        calcH: "120px",
-        adW: "241px"
-      },
+      // width: {
+      //   navWidth: "1442px",
+      //   navItemWidth: "551px",
+      //   catWidth: "143px",
+      //   catItemsWidth: "112px",
+      //   arrivalWidth: "1440px",
+      //   imageW: "83px",
+      //   calcW:"1020px",
+      //   input: "375px",
+      //   input2: "165px",
+      //   search: "385px",
+      //   adH: "522px"
+      // },
+      // height: {
+      //   navHeight: "80px",
+      //   navItemHeight: "32px",
+      //   catHeight: "327px",
+      //   catItemsHeight: "275px",
+      //   arrivalHeight: "112px",
+      //   footerHeight: "215px",
+      //   imageH: "83px",
+      //   calcH: "120px",
+      //   adW: "241px"
+      // },
       fontFamily: {
         popins: ["Poppins", "sans-serif"],
         lemonda: ["Lemonada", "cursive"],

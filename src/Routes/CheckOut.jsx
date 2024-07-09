@@ -40,12 +40,12 @@ const CheckOut = () => {
             </div>
             <div className="flex gap-2 text-xl border-customOrange text-customOrange py-3 px-4 border rounded-lg mt-10 w-48">
               <GoArrowLeft className="mt-1" />
-              <Link to="/shopping-cart" className="">
-                Back
+              <Link to="/" className="">
+                Back to Shop
               </Link>
             </div>
           </div>
-          <div className="h-90 border-l-2 border-gray-500"></div>
+          <div className="h-90 border-l-2 border-gray-500 lg:flex hidden"></div>
 
           <div className="font-popins">
             <h2 className="lg:text-arrival mb-7">Payment Information</h2>

@@ -14,7 +14,7 @@ const Calc = (props) => {
 
   return (
     <>
-      
+      <div>
         <div className="flex lg:h-calcH lg:w-calcW border border-borderColor rounded-2xl font-popins">
           <img
             src={props.image}
@@ -41,15 +41,16 @@ const Calc = (props) => {
           </button>
           <div className="lg:flex relative left-80 ml-4 hidden">
             <p className="text-2xl lg:mt-10 mt-5 relative">{props.price}</p>
-            <p className="text-2xl lg:mt-10 mt-5 relative ml-28">{props.total}</p>
+            <p className="text-2xl lg:mt-10 mt-5 relative ml-28">
+              {props.total}
+            </p>
           </div>
-         
         </div>
-        <button className="relative left-2/3 bottom-16 ml-52 text-2xl"><LiaTimesSolid /></button>
-        
-    
+      </div>
 
-      
+      <button className="relative left-2/3 bottom-16 ml-52 text-2xl">
+        <LiaTimesSolid />
+      </button>
     </>
   );
 };

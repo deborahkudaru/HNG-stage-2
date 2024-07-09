@@ -17,10 +17,10 @@ const Home = () => {
         placeholder="Search..."
         className="md:py-1.5 md:px-3.5 py-1 px-2 w-search relative left-3 top-4 rounded-md md:w-96 md:h-11 h-7 border md:rounded-2xl md:relative md:left-56 md:top-10 border-borderColor bg-generalColor"
       />
-      <Ads />
+      {/* <Ads /> */}
       <Category />
-      <div className="md:ml-72 relative bottom-32">
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-3 px-5">
+      <div className="md:ml-72 px-3 relative bottom-10">
+        <div className="grid md:gap-10  lg:grid-cols-4 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-5 px-5">
           <Items
             itemImage={itemData[0].itemImage}
             itemName={itemData[0].itemName}
@@ -159,13 +159,13 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 w-full">
+      <div className="lg:h-arrivalHeight h-12 bg-customOrange mb-16 lg:pb-24">
         <h2 className="relative lg:top-10 left-12 top-3 font-popins lg:text-arrival text-xl text-white">
           New Arrival
         </h2>
       </div>
-      <div className="">
-        <div className="grid lg:grid-cols-5 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-3 px-5">
+      <div className=" px-5 lg:px-5">
+        <div className="grid xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-3 lg:gap-6 grid-cols-2 gap-5">
           <Arrival
             itemImage={newArrival[0].itemImage}
             itemName={newArrival[0].itemName}

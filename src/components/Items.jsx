@@ -9,10 +9,10 @@ const Items = (props) => {
   };
 
   return (
-    <div className="bg-white lg:w-60  md:w-52  pb-2 rounded-lg">
+    <div className="bg-white xl:w- lg:w-56 w-40  pb-2 rounded-lg">
       <div className="bg-imageColor rounded-t-lg">
-        <button onClick={togglePopup} className="lg:ml-52  ml-36 text-2xl">
-          <IoCartOutline />
+        <button onClick={togglePopup} className="xl:ml-48 lg:ml-44  ml-32 text-2xl">
+          <IoCartOutline className="hover:text-customOrange"/>
         </button>
         {showPopup && (<div className="fixed top-4 font-popins bg-white text-customOrange border rounded-lg border-customOrange py-3 px-5"><p className="mb-5">Added to cart!</p> <button className=" bg-customOrange rounded-sm text-white py-1 px-2" onClick={togglePopup}>Ok</button></div>)}
 
